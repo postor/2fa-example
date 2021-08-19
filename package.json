@@ -1,0 +1,56 @@
+{
+  "name": "2fa-example",
+  "version": "1.0.0",
+  "description": "双因子验证项目示例 | 2fa example project",
+  "main": "web/index.tsx",
+  "scripts": {
+    "dev": "node --loader ts-node/esm node_modules/@shack-js/cli/src/index.mjs dev -e .ts -s dist/web -w",
+    "build": "tsc && shack build",
+    "start": "shack start -e .js -s dist/web -a dist/tsc/apis"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "2fa-hotp-totp": "^2.0.1",
+    "@babel/runtime": "^7.14.6",
+    "@shack-js/cli": "^1.0.18",
+    "crypto-browserify": "^3.12.0",
+    "qrcode.react": "^1.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-tabs": "^3.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.12.4",
+    "@types/qrcode.react": "^1.0.2",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-tabs": "^2.3.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-auto-import": "^1.1.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4",
+    "webpack": "^5.45.1",
+    "webpack-bundle-analyzer": "^4.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postor/2fa-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/postor/2fa-example/issues"
+  },
+  "homepage": "https://github.com/postor/2fa-example#readme"
+}
